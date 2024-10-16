@@ -56,7 +56,7 @@ const TabsLayout = () => {
               <MaterialCommunityIcons
                 name={focused ? "home-variant" : "home-variant-outline"}
                 size={30}
-                color={focused ? "#2C14DD" : "#6B7280"}
+                color={focused ? "#0092DD" : "#6B7280"}
               />
               <Text style={[styles.text, focused && styles.textFocused]}>
                 Dashboard
@@ -73,7 +73,7 @@ const TabsLayout = () => {
               <Ionicons
                 name={focused ? "pie-chart" : "pie-chart-outline"}
                 size={30}
-                color={focused ? "#2C14DD" : "#6B7280"}
+                color={focused ? "#0092DD" : "#6B7280"}
               />
               <Text style={[styles.text, focused && styles.textFocused]}>
                 Finance
@@ -90,7 +90,7 @@ const TabsLayout = () => {
               <MaterialIcons
                 name={focused ? "insert-chart" : "insert-chart-outlined"}
                 size={30}
-                color={focused ? "#2C14DD" : "#6B7280"}
+                color={focused ? "#0092DD" : "#6B7280"}
               />
               <Text style={[styles.text, focused && styles.textFocused]}>
                 My Bids
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
     fontFamily: "Poppins-Regular",
   },
   textFocused: {
-    color: "#2C14DD",
+    color: "#0092DD",
   },
   nav: {
     justifyContent: "center",

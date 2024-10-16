@@ -1,3 +1,4 @@
+import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import React from "react";
 import {
@@ -8,23 +9,42 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import { ProgressBar } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
 
-const Success = () => {
+const Review = () => {
   return (
     <SafeAreaView style={styles.container}>
+      <View style={styles.header}>
+        <TouchableOpacity onPress={() => router.back()}>
+          <Ionicons name="arrow-back-circle-outline" size={24} color="black" />
+        </TouchableOpacity>
+        <Text style={{ fontSize: 16, fontFamily: "Poppins-Bold" }}>
+          Review of Information
+        </Text>
+      </View>
+      <View style={{ paddingTop: 10 }}>
+        <ProgressBar progress={1} color={"#0092DD"} />
+      </View>
       <View
         style={{
           marginTop: 30,
           paddingHorizontal: 30,
+          display: "flex",
+          flexDirection: "column",
           alignItems: "center",
-          justifyContent: "center",
           gap: 10,
+          flex: 1,
+          justifyContent: "center",
         }}
       >
+        <Image
+          source={require("../../assets/images/review.png")}
+          style={{ width: 236, height: 203 }}
+        />
         <Text
           style={{
             fontSize: 20,
@@ -33,7 +53,7 @@ const Success = () => {
             textTransform: "none",
           }}
         >
-          Account Created! 🎉
+          We’re reviewing your info now
         </Text>
         <Text
           style={{
@@ -44,16 +64,9 @@ const Success = () => {
             textAlign: "center",
           }}
         >
-          Your account has been created successfully. Please proceed to complete
-          your membership form to finalize your registration and access all
-          features.
+          You can proceed while you wait-we’ll email you once the review is
+          finished.
         </Text>
-      </View>
-      <View style={{ justifyContent: "center", alignItems: "center", flex: 1 }}>
-        <Image
-          source={require("../../assets/images/success.png")}
-          style={{ width: 190, height: 370 }}
-        />
       </View>
       <View
         style={{
@@ -76,7 +89,7 @@ const Success = () => {
             gap: 10,
             width: width - 60,
           }}
-          onPress={() => router.push("/(auth)/Membership")}
+          onPress={() => router.push("/(tabs)/Dashboard")}
         >
           <Text
             style={{
@@ -85,27 +98,7 @@ const Success = () => {
               fontFamily: "Poppins-regular",
             }}
           >
-            Continue - Complete your membership form
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={{
-            borderRadius: 8,
-            flexDirection: "row",
-            justifyContent: "space-around",
-            alignItems: "center",
-            gap: 10,
-            width: width - 60,
-          }} onPress={() => router.push("/(tabs)/Dashboard")}
-        >
-          <Text
-            style={{
-              color: "#6B7280",
-              fontSize: 14,
-              fontFamily: "Poppins-regular",
-            }}
-          >
-            Skip
+            Continue
           </Text>
         </TouchableOpacity>
       </View>
@@ -113,7 +106,7 @@ const Success = () => {
   );
 };
 
-export default Success;
+export default Review;
 
 const styles = StyleSheet.create({
   container: {
@@ -126,7 +119,7 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: "row",
     justifyContent: "flex-start",
-    gap: 120,
+    gap: 70,
     alignItems: "center",
     paddingHorizontal: 20,
   },

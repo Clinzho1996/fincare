@@ -240,6 +240,7 @@ const Login = ({ navigation }) => {
             gap: 10,
             width: width - 60,
           }}
+          onPress={() => router.push("/(tabs)/Dashboard")}
         >
           <Text
             style={{
