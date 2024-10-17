@@ -9,7 +9,7 @@ const height = Dimensions.get("window").height;
 const Dashboard = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar backgroundColor={"#0092DD"} style="dark" />
+      <StatusBar backgroundColor={"#0092DD"} style="light" />
       <View
         style={{
           backgroundColor: "#0092DD",

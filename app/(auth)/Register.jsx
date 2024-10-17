@@ -1,5 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 import React from "react";
 import {
   Dimensions,
@@ -18,6 +19,7 @@ const height = Dimensions.get("window").height;
 const Register = () => {
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar style="dark" />
       <View style={styles.header}>
         <TouchableOpacity onPress={() => router.back()}>
           <Ionicons name="arrow-back-circle-outline" size={24} color="black" />

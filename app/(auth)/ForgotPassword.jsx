@@ -1,5 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import {
   Dimensions,
@@ -23,6 +24,7 @@ const ForgotPassword = () => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar style="dark" />
       <View
         style={{
           borderBottomWidth: 1,

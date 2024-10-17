@@ -1,4 +1,5 @@
 import { router } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 import React from "react";
 import {
   Dimensions,
@@ -16,6 +17,7 @@ const height = Dimensions.get("window").height;
 const Success = () => {
   return (
     <SafeAreaView style={styles.container}>
+        <StatusBar style="dark" />
       <View
         style={{
           marginTop: 30,

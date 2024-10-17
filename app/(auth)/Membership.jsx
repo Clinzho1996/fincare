@@ -3,6 +3,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Picker } from "@react-native-picker/picker";
 import * as ImagePicker from "expo-image-picker";
 import { router } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
 import {
   Dimensions,
@@ -119,6 +120,7 @@ const Membership = () => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar style="dark" />
       <Portal>
         <Modal
           visible={visible}

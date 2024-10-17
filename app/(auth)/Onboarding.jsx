@@ -1,5 +1,6 @@
 import CarouselCard from "@/components/Carousel";
 import { router } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
@@ -10,6 +11,7 @@ const height = Dimensions.get("window").height;
 const Onboarding = () => {
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar style="dark" />
       <CarouselCard />
       <View style={{ paddingVertical: 30, paddingHorizontal: 20 }}>
         <TouchableOpacity

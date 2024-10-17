@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.devclinton.fincare"
     },
     "web": {
       "bundler": "metro",
@@ -40,6 +41,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "8ccd7fa7-45c9-4f76-b191-cd8a0766e27b"
+      }
     }
   }
 }

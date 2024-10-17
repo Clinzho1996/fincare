@@ -31,7 +31,7 @@ function CarouselCard() {
   const [activeSlide, setActiveSlide] = React.useState(0);
 
   return (
-    <View style={{ height: 560 }}>
+    <View style={{ height: 540 }}>
       <Carousel
         loop
         width={width}
@@ -46,7 +46,7 @@ function CarouselCard() {
                 source={item.img}
                 style={{
                   width: width,
-                  height: 450,
+                  height: 430,
                   borderRadius: 16,
                   objectFit: "cover",
                 }}
