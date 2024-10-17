@@ -33,7 +33,7 @@ const Savings = () => {
               color: "#fff",
             }}
           >
-            Current balance
+            Account balance
           </Text>
           <Text
             style={{
@@ -57,7 +57,7 @@ const Savings = () => {
         >
           <Text
             style={{
-              fontFamily: "Poppins-regular",
+              fontFamily: "Poppins-Regular",
               fontSize: 14,
               color: "#6B7280",
             }}
@@ -85,7 +85,7 @@ const Savings = () => {
         >
           <Text
             style={{
-              fontFamily: "Poppins-regular",
+              fontFamily: "Poppins-Regular",
               fontSize: 14,
               color: "#6B7280",
             }}

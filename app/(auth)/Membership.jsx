@@ -140,7 +140,7 @@ const Membership = () => {
             style={{
               fontSize: 12,
               colo: "#6B7280",
-              fontFamily: "Poppins-regular",
+              fontFamily: "Poppins-Regular",
             }}
           >
             Lorem ipsum dolor sit amet consectetur. Mauris leo at fermentum
@@ -155,7 +155,7 @@ const Membership = () => {
             style={{
               fontSize: 12,
               colo: "#6B7280",
-              fontFamily: "Poppins-regular",
+              fontFamily: "Poppins-Regular",
               marginTop: 10,
             }}
           >

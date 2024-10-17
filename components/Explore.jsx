@@ -22,8 +22,8 @@ const Explore = () => {
           />
           <Text
             style={{
-              fontFamily: "Poppins-regular",
-              fontSize: 14,
+              fontFamily: "Poppins-Regular",
+              fontSize: 13,
               color: "#0D1420",
             }}
           >
@@ -37,8 +37,8 @@ const Explore = () => {
           />
           <Text
             style={{
-              fontFamily: "Poppins-regular",
-              fontSize: 14,
+              fontFamily: "Poppins-Regular",
+              fontSize: 13,
               color: "#0D1420",
             }}
           >
@@ -48,12 +48,12 @@ const Explore = () => {
         <TouchableOpacity style={styles.item}>
           <Image
             source={require("../assets/images/loan.png")}
-            style={{ width: 48, height: 48 }}
+            style={{ width: 48, height: 48, objectFit: "contain" }}
           />
           <Text
             style={{
-              fontFamily: "Poppins-regular",
-              fontSize: 14,
+              fontFamily: "Poppins-Regular",
+              fontSize: 13,
               color: "#0D1420",
             }}
           >
@@ -67,8 +67,8 @@ const Explore = () => {
           />
           <Text
             style={{
-              fontFamily: "Poppins-regular",
-              fontSize: 14,
+              fontFamily: "Poppins-Regular",
+              fontSize: 13,
               color: "#0D1420",
             }}
           >
@@ -82,8 +82,8 @@ const Explore = () => {
           />
           <Text
             style={{
-              fontFamily: "Poppins-regular",
-              fontSize: 14,
+              fontFamily: "Poppins-Regular",
+              fontSize: 13,
               color: "#0D1420",
             }}
           >
@@ -107,10 +107,10 @@ const styles = StyleSheet.create({
   },
   explore: {
     flexDirection: "row",
-    justifyContent: "flex-start",
+    justifyContent: "space-between",
     alignItems: "center",
     flexWrap: "wrap",
-    gap: 20,
+    gap: 15,
     marginTop: 10,
   },
   item: {

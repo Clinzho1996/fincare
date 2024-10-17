@@ -227,7 +227,7 @@ const Identity = () => {
               style={{
                 color: "#fff",
                 fontSize: 14,
-                fontFamily: "Poppins-regular",
+                fontFamily: "Poppins-Regular",
               }}
             >
               Continue

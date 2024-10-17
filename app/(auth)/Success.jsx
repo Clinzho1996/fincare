@@ -17,7 +17,7 @@ const height = Dimensions.get("window").height;
 const Success = () => {
   return (
     <SafeAreaView style={styles.container}>
-        <StatusBar style="dark" />
+      <StatusBar style="dark" />
       <View
         style={{
           marginTop: 30,
@@ -83,8 +83,8 @@ const Success = () => {
           <Text
             style={{
               color: "#fff",
-              fontSize: 14,
-              fontFamily: "Poppins-regular",
+              fontSize: 12,
+              fontFamily: "Poppins-Regular",
             }}
           >
             Continue - Complete your membership form
@@ -98,13 +98,14 @@ const Success = () => {
             alignItems: "center",
             gap: 10,
             width: width - 60,
-          }} onPress={() => router.push("/(tabs)/Dashboard")}
+          }}
+          onPress={() => router.push("/(tabs)/Dashboard")}
         >
           <Text
             style={{
               color: "#6B7280",
               fontSize: 14,
-              fontFamily: "Poppins-regular",
+              fontFamily: "Poppins-Regular",
             }}
           >
             Skip

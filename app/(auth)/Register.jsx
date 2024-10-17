@@ -109,7 +109,7 @@ const Register = () => {
             style={{
               color: "#fff",
               fontSize: 14,
-              fontFamily: "Poppins-regular",
+              fontFamily: "Poppins-Regular",
             }}
           >
             Send verification code

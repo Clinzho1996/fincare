@@ -40,7 +40,7 @@ const Review = () => {
           alignItems: "center",
           gap: 10,
           justifyContent: "center",
-          paddingVertical: 130,
+          paddingVertical: 120,
         }}
       >
         <Image
@@ -97,7 +97,7 @@ const Review = () => {
             style={{
               color: "#fff",
               fontSize: 14,
-              fontFamily: "Poppins-regular",
+              fontFamily: "Poppins-Regular",
             }}
           >
             Continue

@@ -81,7 +81,7 @@ const Transactions = () => {
               <Text
                 style={{
                   color: "#6B7280",
-                  fontFamily: "Poppins-regular",
+                  fontFamily: "Poppins-Regular",
                   fontSize: 12,
                 }}
               >
@@ -93,7 +93,7 @@ const Transactions = () => {
                 style={{
                   color: "#F70000",
                   fontSize: 14,
-                  fontFamily: "Poppins-regular",
+                  fontFamily: "Poppins-Regular",
                 }}
               >
                 -₦12,000.00
@@ -132,7 +132,7 @@ const Transactions = () => {
               <Text
                 style={{
                   color: "#6B7280",
-                  fontFamily: "Poppins-regular",
+                  fontFamily: "Poppins-Regular",
                   fontSize: 12,
                 }}
               >
@@ -144,7 +144,7 @@ const Transactions = () => {
                 style={{
                   color: "#32FC65",
                   fontSize: 14,
-                  fontFamily: "Poppins-regular",
+                  fontFamily: "Poppins-Regular",
                 }}
               >
                 +N20,983.00

@@ -27,10 +27,19 @@ export default function RootLayout() {
   useEffect(() => {
     if (error) throw error;
 
-    if (fontsLoaded) {
-      SplashScreen.hideAsync();
-    }
+    const prepareSplashScreen = async () => {
+      if (fontsLoaded) {
+        await SplashScreen.hideAsync();
+      }
+    };
+
+    prepareSplashScreen();
   }, [fontsLoaded, error]);
+
+  // Render null or a loading component if fonts aren't loaded
+  if (!fontsLoaded) {
+    return null;
+  }
 
   return (
     <PaperProvider>

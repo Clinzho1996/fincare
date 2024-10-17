@@ -27,7 +27,7 @@ const NewPassword = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-        <StatusBar style="dark" />
+      <StatusBar style="dark" />
       <View
         style={{
           borderBottomWidth: 1,

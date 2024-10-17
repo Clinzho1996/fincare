@@ -19,7 +19,7 @@ const height = Dimensions.get("window").height;
 const VerifyEmail = () => {
   return (
     <SafeAreaView style={styles.container}>
-        <StatusBar style="dark" />
+      <StatusBar style="dark" />
       <View style={styles.header}>
         <TouchableOpacity onPress={() => router.back()}>
           <Ionicons name="arrow-back-circle-outline" size={24} color="black" />
@@ -107,7 +107,7 @@ const VerifyEmail = () => {
             style={{
               color: "#fff",
               fontSize: 14,
-              fontFamily: "Poppins-regular",
+              fontFamily: "Poppins-Regular",
             }}
           >
             Verify email
@@ -127,7 +127,7 @@ const VerifyEmail = () => {
             style={{
               color: "#6B7280",
               fontSize: 14,
-              fontFamily: "Poppins-regular",
+              fontFamily: "Poppins-Regular",
             }}
           >
             Resend code
