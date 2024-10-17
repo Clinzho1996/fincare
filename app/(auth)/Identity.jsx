@@ -10,6 +10,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
 import { ProgressBar } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -31,207 +32,209 @@ const Identity = () => {
       <View style={{ paddingTop: 10 }}>
         <ProgressBar progress={1} color={"#0092DD"} />
       </View>
-      <View
-        style={{
-          marginTop: 30,
-          paddingHorizontal: 30,
-          alignItems: "flex-start",
-          gap: 10,
-        }}
-      >
-        <Text
-          style={{
-            fontSize: 20,
-            color: "#101010",
-            fontFamily: "Poppins-Bold",
-            textTransform: "none",
-          }}
-        >
-          Provide your identity document
-        </Text>
-        <Text
-          style={{
-            color: "#6B7280",
-            fontSize: 12,
-            fontFamily: "Poppins-Regular",
-            paddingTop: 10,
-          }}
-        >
-          By selecting your ID type below, you agree that we (and our service
-          providers) can collect, use , and tore your biometric information for
-          identification verification
-        </Text>
-      </View>
-
-      {/* Upload files */}
-      <View style={{ paddingHorizontal: 30, paddingVertical: 20 }}>
+      <ScrollView>
         <View
           style={{
-            shadowColor: "#000",
-            shadowOffset: {
-              width: 1,
-              height: 1,
-            },
-            shadowOpacity: 0.5,
-            shadowRadius: 1,
-            elevation: 2,
-            backgroundColor: "#fff",
-            padding: 20,
-            borderRadius: 12,
-          }}
-        >
-          <View style={styles.id}>
-            <Image
-              source={require("../../assets/images/upload.png")}
-              style={{ width: 35, height: 35 }}
-            />
-            <Text
-              style={{
-                color: "#0D1420",
-                fontSize: 14,
-                fontFamily: "Poppins-Bold",
-              }}
-            >
-              Government issued ID
-            </Text>
-          </View>
-          <View>
-            <Text
-              style={{
-                color: "#6B7280",
-                fontSize: 12,
-                fontFamily: "Poppins-Regular",
-                paddingTop: 10,
-              }}
-            >
-              Provide your NIN Slip, Int’l Passport, Voter’s Card or Driver
-              License
-            </Text>
-          </View>
-          <TouchableOpacity
-            style={{
-              marginVertical: 20,
-              padding: 20,
-              borderStyle: "dashed",
-              borderWidth: 1,
-              borderColor: "#BCBCBC",
-              borderRadius: 8,
-            }}
-          >
-            <Text
-              style={{
-                color: "#6B7280",
-                fontSize: 12,
-                fontFamily: "Poppins-Regular",
-                paddingTop: 10,
-                textAlign: "center",
-              }}
-            >
-              Click to upload
-            </Text>
-          </TouchableOpacity>
-        </View>
-        <View
-          style={{
-            shadowColor: "#000",
-            shadowOffset: {
-              width: 1,
-              height: 1,
-            },
-            shadowOpacity: 0.5,
-            shadowRadius: 1,
-            elevation: 2,
-            backgroundColor: "#fff",
-            padding: 20,
-            borderRadius: 12,
-            marginTop: 20,
-          }}
-        >
-          <View style={styles.id}>
-            <Image
-              source={require("../../assets/images/upload.png")}
-              style={{ width: 35, height: 35 }}
-            />
-            <Text
-              style={{
-                color: "#0D1420",
-                fontSize: 14,
-                fontFamily: "Poppins-Bold",
-              }}
-            >
-              CAC License ID(optional)
-            </Text>
-          </View>
-          <View>
-            <Text
-              style={{
-                color: "#6B7280",
-                fontSize: 12,
-                fontFamily: "Poppins-Regular",
-                paddingTop: 10,
-              }}
-            >
-              Provide your CAC registration certificate
-            </Text>
-          </View>
-          <TouchableOpacity
-            style={{
-              marginVertical: 20,
-              padding: 20,
-              borderStyle: "dashed",
-              borderWidth: 1,
-              borderColor: "#BCBCBC",
-              borderRadius: 8,
-            }}
-          >
-            <Text
-              style={{
-                color: "#6B7280",
-                fontSize: 12,
-                fontFamily: "Poppins-Regular",
-                paddingTop: 10,
-                textAlign: "center",
-              }}
-            >
-              Click to upload
-            </Text>
-          </TouchableOpacity>
-        </View>
-      </View>
-      <View
-        style={{
-          marginTop: 10,
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "space-between",
-          paddingHorizontal: 30,
-          gap: 20,
-        }}
-      >
-        <TouchableOpacity
-          style={{
-            backgroundColor: "#0092DD",
-            paddingVertical: 10,
-            borderRadius: 8,
-            flexDirection: "row",
-            justifyContent: "space-around",
-            alignItems: "center",
+            marginTop: 30,
+            paddingHorizontal: 30,
+            alignItems: "flex-start",
             gap: 10,
-            width: width - 60,
           }}
-          onPress={() => router.push("/(auth)/Review")}
         >
           <Text
             style={{
-              color: "#fff",
-              fontSize: 14,
-              fontFamily: "Poppins-regular",
+              fontSize: 20,
+              color: "#101010",
+              fontFamily: "Poppins-Bold",
+              textTransform: "none",
             }}
           >
-            Continue
+            Provide your identity document
           </Text>
-        </TouchableOpacity>
-      </View>
+          <Text
+            style={{
+              color: "#6B7280",
+              fontSize: 12,
+              fontFamily: "Poppins-Regular",
+              paddingTop: 10,
+            }}
+          >
+            By selecting your ID type below, you agree that we (and our service
+            providers) can collect, use , and tore your biometric information
+            for identification verification
+          </Text>
+        </View>
+
+        {/* Upload files */}
+        <View style={{ paddingHorizontal: 30, paddingVertical: 20 }}>
+          <View
+            style={{
+              shadowColor: "#000",
+              shadowOffset: {
+                width: 1,
+                height: 1,
+              },
+              shadowOpacity: 0.5,
+              shadowRadius: 1,
+              elevation: 2,
+              backgroundColor: "#fff",
+              padding: 20,
+              borderRadius: 12,
+            }}
+          >
+            <View style={styles.id}>
+              <Image
+                source={require("../../assets/images/upload.png")}
+                style={{ width: 35, height: 35 }}
+              />
+              <Text
+                style={{
+                  color: "#0D1420",
+                  fontSize: 14,
+                  fontFamily: "Poppins-Bold",
+                }}
+              >
+                Government issued ID
+              </Text>
+            </View>
+            <View>
+              <Text
+                style={{
+                  color: "#6B7280",
+                  fontSize: 12,
+                  fontFamily: "Poppins-Regular",
+                  paddingTop: 10,
+                }}
+              >
+                Provide your NIN Slip, Int’l Passport, Voter’s Card or Driver
+                License
+              </Text>
+            </View>
+            <TouchableOpacity
+              style={{
+                marginVertical: 20,
+                padding: 20,
+                borderStyle: "dashed",
+                borderWidth: 1,
+                borderColor: "#BCBCBC",
+                borderRadius: 8,
+              }}
+            >
+              <Text
+                style={{
+                  color: "#6B7280",
+                  fontSize: 12,
+                  fontFamily: "Poppins-Regular",
+                  paddingTop: 10,
+                  textAlign: "center",
+                }}
+              >
+                Click to upload
+              </Text>
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              shadowColor: "#000",
+              shadowOffset: {
+                width: 1,
+                height: 1,
+              },
+              shadowOpacity: 0.5,
+              shadowRadius: 1,
+              elevation: 2,
+              backgroundColor: "#fff",
+              padding: 20,
+              borderRadius: 12,
+              marginTop: 20,
+            }}
+          >
+            <View style={styles.id}>
+              <Image
+                source={require("../../assets/images/upload.png")}
+                style={{ width: 35, height: 35 }}
+              />
+              <Text
+                style={{
+                  color: "#0D1420",
+                  fontSize: 14,
+                  fontFamily: "Poppins-Bold",
+                }}
+              >
+                CAC License ID(optional)
+              </Text>
+            </View>
+            <View>
+              <Text
+                style={{
+                  color: "#6B7280",
+                  fontSize: 12,
+                  fontFamily: "Poppins-Regular",
+                  paddingTop: 10,
+                }}
+              >
+                Provide your CAC registration certificate
+              </Text>
+            </View>
+            <TouchableOpacity
+              style={{
+                marginVertical: 20,
+                padding: 20,
+                borderStyle: "dashed",
+                borderWidth: 1,
+                borderColor: "#BCBCBC",
+                borderRadius: 8,
+              }}
+            >
+              <Text
+                style={{
+                  color: "#6B7280",
+                  fontSize: 12,
+                  fontFamily: "Poppins-Regular",
+                  paddingTop: 10,
+                  textAlign: "center",
+                }}
+              >
+                Click to upload
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+        <View
+          style={{
+            marginTop: 10,
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "space-between",
+            paddingHorizontal: 30,
+            gap: 20,
+          }}
+        >
+          <TouchableOpacity
+            style={{
+              backgroundColor: "#0092DD",
+              paddingVertical: 10,
+              borderRadius: 8,
+              flexDirection: "row",
+              justifyContent: "space-around",
+              alignItems: "center",
+              gap: 10,
+              width: width - 60,
+            }}
+            onPress={() => router.push("/(auth)/Review")}
+          >
+            <Text
+              style={{
+                color: "#fff",
+                fontSize: 14,
+                fontFamily: "Poppins-regular",
+              }}
+            >
+              Continue
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };

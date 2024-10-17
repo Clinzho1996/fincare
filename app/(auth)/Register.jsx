@@ -79,6 +79,7 @@ const Register = () => {
           placeholder="example.untitle.com"
           style={{ color: "#000" }}
           placeholderTextColor="#0D142080"
+          keyboardType="email-address"
         />
       </View>
       <View

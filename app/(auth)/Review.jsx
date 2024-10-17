@@ -39,8 +39,8 @@ const Review = () => {
           flexDirection: "column",
           alignItems: "center",
           gap: 10,
-          flex: 1,
           justifyContent: "center",
+          paddingVertical: 130,
         }}
       >
         <Image

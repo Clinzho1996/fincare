@@ -1,20 +1,24 @@
+import Explore from "@/components/Explore";
+import Savings from "@/components/Savings";
+import Transactions from "@/components/Transactions";
 import { Ionicons } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { Dimensions, StyleSheet, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { ScrollView } from "react-native-gesture-handler";
 
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
 const Dashboard = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <ScrollView style={styles.container}>
       <StatusBar backgroundColor={"#0092DD"} style="light" />
       <View
         style={{
           backgroundColor: "#0092DD",
           paddingHorizontal: 20,
-          paddingVertical: 30,
+          paddingTop: 60,
+          paddingBottom: 100,
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
@@ -24,7 +28,7 @@ const Dashboard = () => {
           <Text
             style={{ color: "#fff", fontSize: 16, fontFamily: "Poppins-Bold" }}
           >
-            Hi, Ajibola
+            Hi, Dev-Clinton
           </Text>
           <Text
             style={{
@@ -49,7 +53,10 @@ const Dashboard = () => {
           <Ionicons name="notifications-outline" color="#fff" size={20} />
         </View>
       </View>
-    </SafeAreaView>
+      <Savings />
+      <Explore />
+      <Transactions />
+    </ScrollView>
   );
 };
 

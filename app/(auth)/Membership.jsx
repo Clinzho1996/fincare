@@ -261,7 +261,7 @@ const Membership = () => {
                     source={require("../../assets/images/edit.png")}
                     style={{ width: 40, height: 40 }}
                   />
-                  <Text style={{ color: "#fff", fontFamily: "Poppins-Medium" }}>
+                  <Text style={{ color: "#000", fontFamily: "Poppins-Medium" }}>
                     Upload
                   </Text>
                 </TouchableOpacity>
